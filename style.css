@@ -1,20 +1,25 @@
+/* تحسين مظهر الصفحة */
 body {
   font-family: 'Arial', sans-serif;
   text-align: center;
   padding: 50px;
+  background-color: #fff;  /* خلفية بيضاء */
+  color: #000;  /* النص باللون الأسود */
   transition: background-color 0.3s, color 0.3s;
 }
 
+/* تغيير اللون بين الوضعين */
 .light-mode {
-  background-color: #f9f9f9;
-  color: #000;
+  background-color: #fff;  /* خلفية بيضاء */
+  color: #000;  /* نص باللون الأسود */
 }
 
 .dark-mode {
-  background-color: #111;
-  color: #eee;
+  background-color: #222;  /* خلفية داكنة */
+  color: #eee;  /* نص باللون الأبيض */
 }
 
+/* تعديل شكل الحاوية */
 .container {
   background: white;
   padding: 30px;
@@ -22,25 +27,54 @@ body {
   max-width: 500px;
   margin: auto;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
 }
 
-.dark-mode .container {
-  background-color: #222;
-  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+/* مظهر الأزرار */
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #4CAF50; /* اللون الأخضر */
+  color: white;
+  border: none;
+  border-radius: 25px; /* الحواف دائرية */
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
+button:hover {
+  background-color: #45a049; /* تأثير عند المرور فوق الزر */
+}
+
+button:active {
+  background-color: #388e3c; /* تأثير عند الضغط على الزر */
+}
+
+/* مظهر المدخلات */
 input {
   padding: 10px;
   width: 80%;
   margin: 10px 0;
+  border-radius: 25px; /* حواف دائرية */
+  border: 1px solid #ccc;
+  font-size: 16px;
 }
 
-button {
-  padding: 10px 20px;
-  cursor: pointer;
+input:focus {
+  border-color: #4CAF50; /* لون الحدود عند التركيز */
 }
 
+/* مظهر النص في النتائج */
 #result {
   margin-top: 20px;
   font-size: 18px;
+}
+
+a {
+  color: #4CAF50; /* اللون الأخضر للرابط */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
