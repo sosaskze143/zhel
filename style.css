@@ -21,60 +21,195 @@ body {
 
 /* تعديل شكل الحاوية */
 .container {
-  background: white;
+  background: #fff; /* الخلفية بيضاء */
   padding: 30px;
-  border-radius: 10px;
+  border-radius: 20px;  /* جعل الحواف دائرية أكثر */
   max-width: 500px;
   margin: auto;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease;
 }
 
 /* مظهر الأزرار */
 button {
-  padding: 10px 20px;
+  padding: 12px 25px;
   cursor: pointer;
-  background-color: #4CAF50; /* اللون الأخضر */
+  background-color: #4CAF50;  /* اللون الأخضر */
   color: white;
   border: none;
-  border-radius: 25px; /* الحواف دائرية */
-  font-size: 16px;
-  transition: background-color 0.3s ease;
+  border-radius: 30px;  /* حواف دائرية جدًا */
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
   background-color: #45a049; /* تأثير عند المرور فوق الزر */
+  transform: scale(1.05); /* تكبير الزر قليلًا عند المرور */
 }
 
 button:active {
   background-color: #388e3c; /* تأثير عند الضغط على الزر */
+  transform: scale(1); /* إعادة الحجم الطبيعي عند الضغط */
 }
 
 /* مظهر المدخلات */
 input {
-  padding: 10px;
+  padding: 12px;
   width: 80%;
-  margin: 10px 0;
+  margin: 15px 0;
   border-radius: 25px; /* حواف دائرية */
   border: 1px solid #ccc;
   font-size: 16px;
+  transition: border-color 0.3s;
 }
 
 input:focus {
-  border-color: #4CAF50; /* لون الحدود عند التركيز */
+  border-color: #4CAF50;  /* تغيير اللون عند التركيز */
 }
 
 /* مظهر النص في النتائج */
 #result {
   margin-top: 20px;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;  /* نص داكن قليلًا لجعله بارزًا */
 }
 
+/* مظهر الرابط */
 a {
-  color: #4CAF50; /* اللون الأخضر للرابط */
+  color: #4CAF50;  /* اللون الأخضر للرابط */
   text-decoration: none;
+  font-weight: bold;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+/* مظهر الوضع الليلي */
+body.dark-mode {
+  background-color: #333; /* خلفية داكنة */
+  color: #ddd;  /* نص فاتح في الوضع الليلي */
+}
+
+.container.dark-mode {
+  background: #444;  /* خلفية داكنة للحاوية */
+}
+
+button.dark-mode {
+  background-color: #45a049;  /* الأزرار في الوضع الليلي بنفس اللون الأخضر */
+}
+
+input.dark-mode {
+  background-color: #333; /* خلفية المدخلات داكنة */
+  color: #fff; /* النص في المدخلات أبيض */
+  border-color: #4CAF50;  /* حدود المدخلات باللون الأخضر */
+}/* تحسين مظهر الصفحة */
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  padding: 50px;
+  background-color: #fff;  /* خلفية بيضاء */
+  color: #000;  /* النص باللون الأسود */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* تغيير اللون بين الوضعين */
+.light-mode {
+  background-color: #fff;  /* خلفية بيضاء */
+  color: #000;  /* نص باللون الأسود */
+}
+
+.dark-mode {
+  background-color: #222;  /* خلفية داكنة */
+  color: #eee;  /* نص باللون الأبيض */
+}
+
+/* تعديل شكل الحاوية */
+.container {
+  background: #fff; /* الخلفية بيضاء */
+  padding: 30px;
+  border-radius: 20px;  /* جعل الحواف دائرية أكثر */
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+/* مظهر الأزرار */
+button {
+  padding: 12px 25px;
+  cursor: pointer;
+  background-color: #4CAF50;  /* اللون الأخضر */
+  color: white;
+  border: none;
+  border-radius: 30px;  /* حواف دائرية جدًا */
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #45a049; /* تأثير عند المرور فوق الزر */
+  transform: scale(1.05); /* تكبير الزر قليلًا عند المرور */
+}
+
+button:active {
+  background-color: #388e3c; /* تأثير عند الضغط على الزر */
+  transform: scale(1); /* إعادة الحجم الطبيعي عند الضغط */
+}
+
+/* مظهر المدخلات */
+input {
+  padding: 12px;
+  width: 80%;
+  margin: 15px 0;
+  border-radius: 25px; /* حواف دائرية */
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #4CAF50;  /* تغيير اللون عند التركيز */
+}
+
+/* مظهر النص في النتائج */
+#result {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;  /* نص داكن قليلًا لجعله بارزًا */
+}
+
+/* مظهر الرابط */
+a {
+  color: #4CAF50;  /* اللون الأخضر للرابط */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* مظهر الوضع الليلي */
+body.dark-mode {
+  background-color: #333; /* خلفية داكنة */
+  color: #ddd;  /* نص فاتح في الوضع الليلي */
+}
+
+.container.dark-mode {
+  background: #444;  /* خلفية داكنة للحاوية */
+}
+
+button.dark-mode {
+  background-color: #45a049;  /* الأزرار في الوضع الليلي بنفس اللون الأخضر */
+}
+
+input.dark-mode {
+  background-color: #333; /* خلفية المدخلات داكنة */
+  color: #fff; /* النص في المدخلات أبيض */
+  border-color: #4CAF50;  /* حدود المدخلات باللون الأخضر */
 }
