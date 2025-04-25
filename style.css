@@ -1,0 +1,46 @@
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  padding: 50px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.light-mode {
+  background-color: #f9f9f9;
+  color: #000;
+}
+
+.dark-mode {
+  background-color: #111;
+  color: #eee;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.dark-mode .container {
+  background-color: #222;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+input {
+  padding: 10px;
+  width: 80%;
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+}
