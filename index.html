@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>تحقق من عملة ظل</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body class="light-mode">
+  <div class="container">
+    <h1>تحقق من عملة ظل</h1>
+    
+    <!-- شريط البحث -->
+    <input type="text" id="searchInput" placeholder="ابحث عن صاحب العملة أو الوصف">
+    <button onclick="searchByOwnerOrDescription()">بحث</button>
+
+    <br><br>
+
+    <input type="text" id="serialInput" placeholder="ادخل الرقم التسلسلي">
+    <button onclick="checkSerial()">تحقق</button>
+    <div id="result"></div>
+
+    <hr>
+    <p>عدد العملات الأصلية: 9</p>
+    <p>آخر تحقق: <span id="lastCheck">لم يتم بعد</span></p>
+    <a href="https://forms.gle/your-form-link" target="_blank">اقترح إضافة عملة جديدة</a>
+
+    <br><br>
+
+    <!-- تبديل الوضع -->
+    <button onclick="toggleMode()">تبديل الوضع (ليلي/نهاري)</button>
+
+    <!-- فلاتر لعرض العملات -->
+    <br><br>
+    <button onclick="filterByStatus('ثابتة')">عرض العملات الثابتة</button>
+    <button onclick="filterByStatus('قابلة للتحويل')">عرض العملات القابلة للتحويل</button>
+    <button onclick="filterByRank('أسطوري')">عرض العملات الأسطورية</button>
+    <button onclick="filterByRank('نادر')">عرض العملات النادرة</button>
+  </div>
+</body>
+</html>
