@@ -19,11 +19,11 @@ const shadowCurrency = [
   },
   {
     serial: "ZH-11-143179",
-    owner: "فلان 3",
-    rank: "أسطوري",
+    owner: "بيان الشهراني",
+    rank: "فضي",
     issued: "أبريل 2025",
-    description: "لطيبته المتناهية.",
-    status: "ثابتة",
+    description: "لمساعدته للامبراطور .",
+    status: "قابلة للسحب من صاحب العملة اذا وجد من هو افضل منه",
     lastUpdated: "أبريل 2025"
   },
   {
